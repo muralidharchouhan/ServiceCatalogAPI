@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "QCIA/BWodz/DXfaIMFbWX8Cpkooiu+pkaF+gxflcrlY=",
+  "Source": "ServiceCatalogAPI",
+  "BasePath": "_content/ServiceCatalogAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -36,7 +36,19 @@ namespace ServiceCatalogAPI.Controllers
         public IActionResult CreateCatalogItem([FromBody] CatalogItem item)
         {
             var items = LoadItems();
-            item.Id = System.Guid.NewGuid().ToString();
+            // Generate REQXXXX id
+            int nextSeq = 1;
+            if (items.Count > 0)
+            {
+                var last = items.OrderByDescending(i => i.Id).FirstOrDefault();
+                if (last != null && last.Id != null && last.Id.StartsWith("REQ"))
+                {
+                    var numPart = last.Id.Substring(3);
+                    if (int.TryParse(numPart, out int lastSeq))
+                        nextSeq = lastSeq + 1;
+                }
+            }
+            item.Id = $"REQ{nextSeq.ToString("D4")}";
             items.Add(item);
             SaveItems(items);
             return CreatedAtAction(nameof(ViewCatalogItem), new { id = item.Id }, item);
@@ -51,9 +63,17 @@ namespace ServiceCatalogAPI.Controllers
             existing.Name = item.Name;
             existing.Description = item.Description;
             existing.Category = item.Category;
-            existing.Price = item.Price;
+            existing.AssignedTo = item.AssignedTo;
+            existing.RequestedFor = item.RequestedFor;
+            existing.SupportGroup = item.SupportGroup;
             SaveItems(items);
             return Ok(existing);
+        }
+        [HttpGet("viewall")]
+        public IActionResult ViewAllCatalogItems()
+        {
+            var items = LoadItems();
+            return Ok(items);
         }
 
         [HttpGet("view/{id}")]

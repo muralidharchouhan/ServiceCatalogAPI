@@ -1,0 +1,34 @@
+{
+  "NonApprovedSoftwareRequests": [
+    {
+      "Id": "b17713a9-8f59-4b25-a568-29eb725c2500",
+      "RequestedFor": "string",
+      "SoftwareName": "string",
+      "SoftwareUrl": "string",
+      "BusinessJustification": "string",
+      "NumberOfUsers": 0,
+      "IsLicenseNeeded": true,
+      "Owner": "string"
+    },
+    {
+      "Id": "828b03fa-db74-4084-805a-0feb7df4727f",
+      "RequestedFor": "string",
+      "SoftwareName": "string",
+      "SoftwareUrl": "string",
+      "BusinessJustification": "string",
+      "NumberOfUsers": 0,
+      "IsLicenseNeeded": true,
+      "Owner": "string"
+    },
+    {
+      "Id": "REQNA0001",
+      "RequestedFor": "string",
+      "SoftwareName": "string",
+      "SoftwareUrl": "string",
+      "BusinessJustification": "string",
+      "NumberOfUsers": 0,
+      "IsLicenseNeeded": true,
+      "Owner": "string"
+    }
+  ]
+}

@@ -29,3 +29,5 @@
 /Users/Chouhan/Desktop/ServiceCatalogAPI/obj/Debug/net8.0/ServiceCatalogAPI.pdb
 /Users/Chouhan/Desktop/ServiceCatalogAPI/obj/Debug/net8.0/ServiceCatalogAPI.genruntimeconfig.cache
 /Users/Chouhan/Desktop/ServiceCatalogAPI/obj/Debug/net8.0/ref/ServiceCatalogAPI.dll
+/Users/Chouhan/Desktop/ServiceCatalogAPI/bin/Debug/net8.0/nonapprovedsoftware.json
+/Users/Chouhan/Desktop/ServiceCatalogAPI/obj/Debug/net8.0/ServiceCatalogAPI.sourcelink.json

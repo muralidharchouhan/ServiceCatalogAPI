@@ -11,6 +11,12 @@ namespace ServiceCatalogAPI.Controllers
     [Route("api/nonapprovedsoftware")]
     public class NonApprovedSoftwareRequestController : ControllerBase
     {
+        [HttpDelete("deleteall")]
+        public IActionResult DeleteAllRequests()
+        {
+            SaveRequests(new List<NonApprovedSoftwareRequest>());
+            return NoContent();
+        }
         private readonly string _jsonPath = "nonapprovedsoftware.json";
 
         private List<NonApprovedSoftwareRequest> LoadRequests()

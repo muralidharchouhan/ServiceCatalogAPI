@@ -11,6 +11,12 @@ namespace ServiceCatalogAPI.Controllers
     [Route("api/catalogitem")]
     public class CatalogItemController : ControllerBase
     {
+        [HttpDelete("deleteall")]
+        public IActionResult DeleteAllCatalogItems()
+        {
+            SaveItems(new List<CatalogItem>());
+            return NoContent();
+        }
         private readonly string _jsonPath = "catalog.json";
 
         private List<CatalogItem> LoadItems()

@@ -19,6 +19,26 @@
       "NumberOfUsers": 0,
       "IsLicenseNeeded": true,
       "Owner": "string"
+    },
+    {
+      "Id": "REQNA0001",
+      "RequestedFor": "string",
+      "SoftwareName": "string",
+      "SoftwareUrl": "string",
+      "BusinessJustification": "string",
+      "NumberOfUsers": 0,
+      "IsLicenseNeeded": true,
+      "Owner": "string"
+    },
+    {
+      "Id": "REQNA0002",
+      "RequestedFor": "string",
+      "SoftwareName": "string",
+      "SoftwareUrl": "string",
+      "BusinessJustification": "string",
+      "NumberOfUsers": 0,
+      "IsLicenseNeeded": true,
+      "Owner": "string"
     }
   ]
 }

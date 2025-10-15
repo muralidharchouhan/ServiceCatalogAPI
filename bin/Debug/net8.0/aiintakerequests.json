@@ -19,6 +19,16 @@
       "AssignedTo": "string",
       "Status": "Pending",
       "Comments": "string"
+    },
+    {
+      "Id": "REQAI0003",
+      "AIProductNames": "string",
+      "UseCaseDescription": "string",
+      "VendorName": "string",
+      "AssignedGroup": null,
+      "AssignedTo": null,
+      "Status": "Pending",
+      "Comments": null
     }
   ]
 }

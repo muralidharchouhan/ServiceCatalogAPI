@@ -1,3 +1,13 @@
 {
-  "PowerPlatformRequests": []
+  "PowerPlatformRequests": [
+    {
+      "Id": "REQPP0001",
+      "TypeOfRequest": "string",
+      "EnvironmentName": "string",
+      "AssignedGroup": null,
+      "AssignedTo": null,
+      "Status": "Pending",
+      "Comments": null
+    }
+  ]
 }

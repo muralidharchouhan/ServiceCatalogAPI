@@ -64,6 +64,10 @@ namespace ServiceCatalogAPI.Controllers
             existing.AIProductNames = item.AIProductNames;
             existing.UseCaseDescription = item.UseCaseDescription;
             existing.VendorName = item.VendorName;
+            if (!string.IsNullOrEmpty(item.Status))
+            {
+                existing.Status = item.Status;
+            }
             SaveItems(items);
             return Ok(existing);
         }

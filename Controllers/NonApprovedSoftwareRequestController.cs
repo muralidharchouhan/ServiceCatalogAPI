@@ -74,6 +74,10 @@ namespace ServiceCatalogAPI.Controllers
             existing.NumberOfUsers = request.NumberOfUsers;
             existing.IsLicenseNeeded = request.IsLicenseNeeded;
             existing.Owner = request.Owner;
+            if (!string.IsNullOrEmpty(request.Status))
+            {
+                existing.Status = request.Status;
+            }
             SaveRequests(items);
             return Ok(existing);
         }

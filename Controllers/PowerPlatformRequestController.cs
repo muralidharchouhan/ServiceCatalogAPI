@@ -64,6 +64,10 @@ namespace ServiceCatalogAPI.Controllers
             existing.TypeOfRequest = item.TypeOfRequest;
             existing.EnvironmentName = item.EnvironmentName;
             existing.Comments = item.Comments;
+            if (!string.IsNullOrEmpty(item.Status))
+            {
+                existing.Status = item.Status;
+            }
             SaveItems(items);
             return Ok(existing);
         }

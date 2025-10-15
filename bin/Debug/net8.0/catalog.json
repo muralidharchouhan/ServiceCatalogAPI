@@ -8,24 +8,6 @@
       "AssignedTo": "string",
       "RequestedFor": "string",
       "SupportGroup": "string"
-    },
-    {
-      "Id": "REQ0002",
-      "Name": "string",
-      "Description": "string",
-      "Category": "string",
-      "AssignedTo": "string",
-      "RequestedFor": "string",
-      "SupportGroup": "string"
-    },
-    {
-      "Id": "REQ0003",
-      "Name": "string",
-      "Description": "string",
-      "Category": "string",
-      "AssignedTo": "string",
-      "RequestedFor": "string",
-      "SupportGroup": "string"
     }
   ]
 }

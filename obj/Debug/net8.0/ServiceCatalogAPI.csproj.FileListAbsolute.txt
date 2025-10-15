@@ -31,3 +31,7 @@
 /Users/Chouhan/Desktop/ServiceCatalogAPI/obj/Debug/net8.0/ref/ServiceCatalogAPI.dll
 /Users/Chouhan/Desktop/ServiceCatalogAPI/bin/Debug/net8.0/nonapprovedsoftware.json
 /Users/Chouhan/Desktop/ServiceCatalogAPI/obj/Debug/net8.0/ServiceCatalogAPI.sourcelink.json
+/Users/Chouhan/Desktop/ServiceCatalogAPI/bin/Debug/net8.0/catalogtypes.json
+/Users/Chouhan/Desktop/ServiceCatalogAPI/bin/Debug/net8.0/applicationservicerequests.json
+/Users/Chouhan/Desktop/ServiceCatalogAPI/bin/Debug/net8.0/aiintakerequests.json
+/Users/Chouhan/Desktop/ServiceCatalogAPI/bin/Debug/net8.0/powerplatformrequests.json

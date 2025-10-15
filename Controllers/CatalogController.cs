@@ -36,11 +36,19 @@ namespace ServiceCatalogAPI.Controllers
         public IActionResult CreateCatalog([FromBody] Catalog catalog)
         {
             var items = LoadCatalogs();
-            // Generate CatalogId as GUID if not provided
-            if (string.IsNullOrWhiteSpace(catalog.CatalogId))
+            // Always auto-generate CatalogId as CATXXXX
+            int nextSeq = 1;
+            if (items.Count > 0)
             {
-                catalog.CatalogId = Guid.NewGuid().ToString();
+                var last = items.OrderByDescending(i => i.CatalogId).FirstOrDefault();
+                if (last != null && last.CatalogId != null && last.CatalogId.StartsWith("CAT"))
+                {
+                    var numPart = last.CatalogId.Substring(3);
+                    if (int.TryParse(numPart, out int lastSeq))
+                        nextSeq = lastSeq + 1;
+                }
             }
+            catalog.CatalogId = $"CAT{nextSeq.ToString("D4")}";
             items.Add(catalog);
             SaveCatalogs(items);
             return CreatedAtAction(nameof(ViewCatalog), new { id = catalog.CatalogId }, catalog);

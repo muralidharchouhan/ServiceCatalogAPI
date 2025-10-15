@@ -10,9 +10,9 @@ namespace ServiceCatalogAPI.Models
         public int NumberOfUsers { get; set; }
         public bool IsLicenseNeeded { get; set; }
         public string Owner { get; set; }
-        public string AssignedGroup { get; set; }
-        public string AssignedTo { get; set; }
-        public string Status { get; set; } = "Pending";
-        public string Comments { get; set; }
+    public string? AssignedGroup { get; set; }
+    public string? AssignedTo { get; set; }
+    public string Status { get; set; } = "Pending";
+    public string? Comments { get; set; }
     }
 }

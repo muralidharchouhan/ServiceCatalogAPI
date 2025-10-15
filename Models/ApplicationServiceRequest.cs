@@ -9,8 +9,8 @@ namespace ServiceCatalogAPI.Models
         public string AssignedTo { get; set; }
         public string RequestedFor { get; set; }
         public string SupportGroup { get; set; }
-        public string AssignedGroup { get; set; }
-        public string Status { get; set; } = "Pending";
-        public string Comments { get; set; }
+    public string? AssignedGroup { get; set; }
+    public string Status { get; set; } = "Pending";
+    public string? Comments { get; set; }
     }
 }

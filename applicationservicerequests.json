@@ -1,3 +1,16 @@
 {
-  "ApplicationServiceRequests": []
+  "ApplicationServiceRequests": [
+    {
+      "Id": "REQAR0001",
+      "Name": "string",
+      "Description": "string",
+      "Category": "string",
+      "AssignedTo": "string",
+      "RequestedFor": "string",
+      "SupportGroup": "string",
+      "AssignedGroup": "string",
+      "Status": "Pending",
+      "Comments": "string"
+    }
+  ]
 }

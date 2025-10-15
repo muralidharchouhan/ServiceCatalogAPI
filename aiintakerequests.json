@@ -1,3 +1,24 @@
 {
-  "AIIntakeRequests": []
+  "AIIntakeRequests": [
+    {
+      "Id": "REQAI0001",
+      "AIProductNames": "string",
+      "UseCaseDescription": "string",
+      "VendorName": "string",
+      "AssignedGroup": "string",
+      "AssignedTo": "string",
+      "Status": "string",
+      "Comments": "string"
+    },
+    {
+      "Id": "REQAI0002",
+      "AIProductNames": "string",
+      "UseCaseDescription": "string",
+      "VendorName": "string",
+      "AssignedGroup": "string",
+      "AssignedTo": "string",
+      "Status": "Pending",
+      "Comments": "string"
+    }
+  ]
 }

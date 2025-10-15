@@ -55,6 +55,7 @@ namespace ServiceCatalogAPI.Controllers
                 }
             }
             request.Id = $"REQNA{nextSeq.ToString("D4")}";
+            request.Status = "Pending";
             items.Add(request);
             SaveRequests(items);
             return CreatedAtAction(nameof(ViewRequest), new { id = request.Id }, request);

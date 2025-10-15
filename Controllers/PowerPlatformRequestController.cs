@@ -49,6 +49,7 @@ namespace ServiceCatalogAPI.Controllers
                 }
             }
             item.Id = $"REQPP{nextSeq.ToString("D4")}";
+            item.Status = "Pending";
             items.Add(item);
             SaveItems(items);
             return CreatedAtAction(nameof(View), new { id = item.Id }, item);

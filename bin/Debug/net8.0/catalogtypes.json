@@ -1,13 +1,13 @@
 {
   "Catalogs": [
     {
-      "CatalogId": "string",
+      "CatalogId": "CAT0001",
       "RequestType": "Power Platform Request",
       "RequestName": "Power Platform Request",
       "RequestDescription": "Make a request for new power platform environment, access to existing environment, a new connector and premium licenses for power automate or power apps"
     },
     {
-      "CatalogId": "string",
+      "CatalogId": "CAT0002",
       "RequestType": "AI Intake Request",
       "RequestName": "AI Intake Request",
       "RequestDescription": "Make a request for new AI use case review by AI Center of excellence group and AI governance committee"
